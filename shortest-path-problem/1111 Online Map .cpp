@@ -56,7 +56,7 @@ int main() {
 					ft[j] = ft[minu] + time[minu][j];
 					p1[j] = minu;
 				}
-				else if (st[minu] + dis[minu][j] == st[j]
+				else if (st[minu] + dis[minu][j] == st[j] // 思路相同，但是细节不同的谨慎复制粘贴 
 					&& ft[j] > ft[minu] + time[minu][j]) {
 					st[j] = st[minu] + dis[minu][j];
 					p1[j] = minu;
@@ -87,7 +87,7 @@ int main() {
 					nnum[j] = nnum[minu] + 1;
 					p2[j] = minu;
 				}
-				else if (st[minu] + dis[minu][j] == st[j]
+				else if (tt[minu] + time[minu][j] == tt[j]
 					&& nnum[j] > nnum[minu] + 1) {
 					tt[j] = tt[minu] + time[minu][j];
 					p2[j] = minu;
