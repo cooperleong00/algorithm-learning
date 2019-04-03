@@ -3,7 +3,7 @@
 #include <map>
 #include <vector>
 using namespace std;
-//题目明确给出数字限制时尽量使用线性表 
+// 题目明确给出数字限制时尽量使用线性表 
 vector<vector<int> > tree(100);
 vector<int> noden(100);
 int maxd=0;
