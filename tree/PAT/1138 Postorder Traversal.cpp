@@ -1,14 +1,14 @@
 /*
-前序中序还原树得后序 
+鍓嶅簭涓簭杩樺師鏍戝緱鍚庡簭 
 */
 
 #include <iostream>
 #include <vector>
 using namespace std;
-int flag=0;//结果 
+int flag=0;//缁撴灉 
 vector<int> pre,in;
 void solve(int prel,int prer,int inl,int inr){
-	//注意递归的提前判断退出，否则超时 
+	//娉ㄦ剰閫掑綊鐨勬彁鍓嶅垽鏂��鍑猴紝鍚﹀垯瓒呮椂 
 	if(inr<inl||flag)	return;
 	int i=inl;
 	while(in[i]!=pre[prel])	i++;
