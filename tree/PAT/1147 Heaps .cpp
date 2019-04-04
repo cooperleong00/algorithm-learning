@@ -24,7 +24,7 @@ int main(){
 			tree[j].rc=2*j+2<=n?2*j+2:-1;
 		}
 		flag=tree[0].data>tree[1].data?0:1;
-		//ÍêÈ«¶ş²æÊ÷ÖĞÓĞ×ÓÊ÷µÄ×îºóÒ»¸ö½ÚµãÏÂ±ê
+		//å®Œå…¨äºŒå‰æ ‘ä¸­æœ‰å­æ ‘çš„æœ€åä¸€ä¸ªèŠ‚ç‚¹ä¸‹æ ‡
 		for(int j=0;j<=(n-1)/2;j++){
 			if(flag==0&&(tree[j].data<tree[tree[j].lc].data||(tree[j].rc<n&&tree[j].data<tree[tree[j].rc].data)))
 				flag=2;
